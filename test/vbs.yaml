@@ -1,12 +1,13 @@
 general:
- bts_image: bts:latest
- sip_image: sip:latest
+ image:
+   bts: bts:latest
+   sip: sip:latest
  MCC: 01     # Mobile Country Code
  MNC: 001    # Mobile Network Code
  NCC: 1      # Network Color Code
  NCCsPermitted: 1
 
-bts_lists:
+bts_list:
 - uhd_addr: 192.168.10.21
   BCC: 1      # BTS Color Code
   LAC: 1      # Location Area Code
