@@ -17,7 +17,7 @@ class Config:
         with open(self.filepath, 'r') as config_file:
             section = yaml.load(config_file, Loader=Loader)
             self.general = section['general']
-            self.bts_lists = section['bts_lists']
+            self.bts_list = section['bts_list']
 
     def __str__(self):
-        return "General settings:\n{0}\nBTS Lists:\n{1}".format(self.general, self.bts_lists)
+        return "General settings:\n{0}\nBTS List:\n{1}".format(self.general, self.bts_list)
